@@ -53,6 +53,9 @@ const getIcon = (name: string) => {
     case 'medium':
       icon = ICONS.MEDIUM;
       break;
+    case 'dev':
+      icon = ICONS.DEV;
+      break;
     default:
       icon = {};
       break;

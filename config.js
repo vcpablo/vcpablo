@@ -1,14 +1,14 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://en.vcpablo.com.br',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Blog by Pablo Veiga',
+  subtitle: 'Changing the world one line of code at a time.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'G-XKSGWLEYLR',
   useKatex: false,
   menu: [
     {
@@ -25,26 +25,27 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Pablo Veiga',
+    photo: '/photo.png',
+    bio: 'Principal Software Engineer at <a href="https://www.bentley.com" target="_blank">Bentley Systems</a>. <br> JavaScript, beer and football lover.',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'vcpablo@gmail.com',
+      facebook: '',
+      telegram: '',
+      twitter: 'vcpablo',
+      github: 'vcpablo',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'pablo-veiga',
+      instagram: 'vcpablo',
       line: '',
       gitlab: '',
       weibo: '',
       codepen: '',
       youtube: '',
       soundcloud: '',
-      medium: '',
+      medium: 'vcpablo',
+      dev: 'vcpablo',
     }
   }
 };

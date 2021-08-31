@@ -4,7 +4,7 @@ const getContactHref = (name: string, contact: string) => {
 
   switch (name) {
     case 'twitter':
-      href = `https://www.twitter.com/${contact}`;
+      href = `https://twitter.com/${contact}`;
       break;
     case 'github':
       href = `https://github.com/${contact}`;
@@ -19,34 +19,37 @@ const getContactHref = (name: string, contact: string) => {
       href = `mailto:${contact}`;
       break;
     case 'linkedin':
-      href = `https://www.linkedin.com/in/${contact}`;
+      href = `https://linkedin.com/in/${contact}`;
       break;
     case 'instagram':
-      href = `https://www.instagram.com/${contact}`;
+      href = `https://instagram.com/${contact}`;
       break;
     case 'line':
       href = `line://ti/p/${contact}`;
       break;
     case 'facebook':
-      href = `https://www.facebook.com/${contact}`;
+      href = `https://facebook.com/${contact}`;
       break;
     case 'gitlab':
-      href = `https://www.gitlab.com/${contact}`;
+      href = `https://gitlab.com/${contact}`;
       break;
     case 'weibo':
-      href = `https://www.weibo.com/${contact}`;
+      href = `https://weibo.com/${contact}`;
       break;
     case 'codepen':
-      href = `https://www.codepen.io/${contact}`;
+      href = `https://codepen.io/${contact}`;
       break;
     case 'youtube':
-      href = `https://www.youtube.com/channel/${contact}`;
+      href = `https://youtube.com/channel/${contact}`;
       break;
     case 'soundcloud':
       href = `https://soundcloud.com/${contact}`;
       break;
     case 'medium':
-      href = `https://medium.com/${contact}`;
+      href = `https://${contact}.medium.com`;
+      break;
+    case 'dev':
+      href = `https://dev.to/${contact}`;
       break;
     default:
       href = contact;
