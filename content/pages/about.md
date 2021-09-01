@@ -1,13 +1,22 @@
 ---
 title: "About me"
 template: "page"
-socialImage: "/media/image-2.jpg"
+socialImage: "/media/vcpablo-about-me.png"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+Hi 👋!  
+  
+My name is Pablo Veiga and I've been a full-stack developer since 2013.
+I had the change to work on several different and cool projects such as e-commerces, smart cities platform, intranet applications and websites in general.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+I'm a JavaScript expert but I also know how to work with C# ASP.NET Core, relational and object-oriented databases, GraphQL, IoT, geo-spatial information, maps, digital business processes and ETL.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+Bachelor in Information Systems - CEFET/RJ.
+Amateur Writer.  
+JavaScript, beer and football lover.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+![Knowledge is not what you know, but what you do with what you know.](/media/vcpablo-about-me.png)
+
+*Knowledge is not what you know, but what you do with what you know.*
+
+Trying to change the world one line of code at a time.

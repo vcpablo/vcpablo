@@ -38,7 +38,7 @@ _Obs.: The goal here is not to benchmark neither discuss which of the implementa
 
 This is probably the most used way of implementing `v-model` in your custom components. You create a prop named `value` using the type you need, then create a local observable variable in `data()` and initialize it with the value of the prop you've created previously and watch its changes in order to emit an `input` event to the parent component to update the `value` prop from the outside**.
 
-```vuejs
+```
 <!-- BaseInput.vue -->
 <template>
   <input type="text" v-model="model" />
@@ -77,7 +77,7 @@ It is also important to mention that in this case we do not use the `v-model` in
 
 _* VueJS already attaches event listeners to form inputs for us automatically and when these inputs are destroyed, all listeners are destroyed as well_
 
-```vuejs
+```
 <!-- BaseInput.vue -->
 <template>
   <input type="text" :value="value" @input="onInput" />
@@ -110,7 +110,7 @@ _* VueJS already attaches event listeners to form inputs for us automatically an
 Another way of implementing `v-model` in your custom component is using computed properties [getters and setters](https://vuejs.org/v2/guide/computed.html#Computed-Setter).
 You can define a local _computed property_, implement a getter that returns the `value` property, and a setter that emits an `input` event for the parent component to update the `value` prop from the outside**.
 
-```vuejs
+```
 <!-- BaseInput.vue -->
 <template>
   <input type="text" v-model="model" />
@@ -151,7 +151,7 @@ _** You must avoid changing a prop value directly [See Docs](https://vuejs.org/v
 You might have noticed that, in the previous examples, the name of the prop is always `value` and the name of the event is always `input`. These are defaults to implement a `v-model` in your custom component. But you can change it if you want. You can name the prop and the event according to your own needs.
 For that to be possible you may set the `model` attribute and tell the component which names you expect to represent the prop and the event that will update it.
 
-```vuejs
+```
 <!-- BaseInput.vue -->
 <template>
   <input type="text" :value="text"  @input="onInput" />
@@ -189,7 +189,7 @@ For that to be possible you may set the `model` attribute and tell the component
 This is not a `v-model` implementation exactly but it will work as it is. With the `.sync` modifier ([VueJS 2.3+](https://vuejs.org/v2/guide/components.html#sync-Modifier)), the child component doesn’t need a value prop. Instead, it uses the same prop name you synced in the parent.
 Also instead of emitting an `input` event to update the prop, you emit the conveniently named event `update:text`. (Source: [Vue’s new and improved prop.sync](https://medium.com/front-end-weekly/vues-v-model-directive-vs-sync-modifier-d1f83957c57c)).
 
-```vuejs
+```
 <!-- BaseInput.vue -->
 <template>
   <input type="text" :value="text"  @input="onInput" />
@@ -224,7 +224,7 @@ With VueJS 3, released on 18 September 2020, it is now possible to define which 
 To do that, you just need to use a modifier in the `v-model` itself when using your custom component.
 In the example below, we are defining that the `text` prop, inside the `BaseInput` component will receive the value from the `v-model`.
 
-```vuejs
+```
 <!-- BaseInput.vue -->
 <template>
   <input type="text" :value="text"  @input="onInput" />
