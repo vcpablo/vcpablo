@@ -40,4 +40,3 @@ collections:
       - {label: "Social Image", name: "socialImage", widget: "image"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown"}
-''
