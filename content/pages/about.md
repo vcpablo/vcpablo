@@ -7,7 +7,7 @@ socialImage: "/media/vcpablo-about-me.png"
 Hi 👋!  
   
 My name is Pablo Veiga and I've been a full-stack developer since 2013.
-I had the change to work on several different and cool projects such as e-commerces, smart cities platform, intranet applications and websites in general.
+During my career, I had the chane to work on several different and cool projects such as e-commerces, smart cities platform, intranet applications and websites in general.
 
 I'm a JavaScript expert but I also know how to work with C# ASP.NET Core, relational and object-oriented databases, GraphQL, IoT, geo-spatial information, maps, digital business processes and ETL.
 
