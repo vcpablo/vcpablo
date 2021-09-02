@@ -7,7 +7,8 @@ socialImage: "/media/vcpablo-about-me.png"
 Olá 👋!  
   
 Meu nome é Pablo Veiga e eu sou Desenvolvedor Full-stack desde 2013.
-Tive a chance de trabalhar com diversos projetos muito legais como lojas virtuais, plataforma de cidades inteligentes, aplicações para intranet e websites em geral.
+  
+Durante minha carreira, tive a chance de trabalhar com diversos projetos muito legais como lojas virtuais, plataforma de cidades inteligentes, aplicações para intranet e websites em geral.
 
 Sou especialista em JavaScript mas também sei trabalhar com C# ASP.NET Core, bancos de dados relacionais e não-relacionais, GraphQL, Internet das Coisas (IoT), análise e manipulação de informações geoespaciais, bibliotecas de mapas, gerenciamento de processos digitais e ETL.
 
