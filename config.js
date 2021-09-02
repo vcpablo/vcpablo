@@ -1,50 +1,51 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://vcpablo.com.br',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
+  title: 'Blog por Pablo Veiga',
+  subtitle: 'Mudando o mundo uma linha de código por vez.',
+  copyright: '© Todos os Direitos Reservados.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'G-XKSGWLEYLR',
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
+      label: 'Artigos',
       path: '/'
     },
     {
-      label: 'About me',
-      path: '/pages/about'
+      label: 'Sobre mim',
+      path: '/pages/sobre'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      label: 'Entre em contato',
+      path: '/pages/contato'
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Pablo Veiga',
+    photo: '/photo.png',
+    bio: 'Principal Software Engineer na <a href="https://www.bentley.com" target="_blank">Bentley Systems</a>. <br> Amante de JavaScript, cerveja e futebol.',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'vcpablo@gmail.com',
+      facebook: '',
+      telegram: '',
+      twitter: 'vcpablo',
+      github: 'vcpablo',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'pablo-veiga',
+      instagram: 'vcpablo',
       line: '',
       gitlab: '',
       weibo: '',
       codepen: '',
       youtube: '',
       soundcloud: '',
-      medium: '',
+      medium: 'vcpablo',
+      dev: 'vcpablo',
     }
   }
 };
