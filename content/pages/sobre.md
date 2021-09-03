@@ -12,8 +12,8 @@ Durante minha carreira, tive a chance de trabalhar com diversos projetos muito l
 
 Sou especialista em JavaScript mas também sei trabalhar com C# ASP.NET Core, bancos de dados relacionais e não-relacionais, GraphQL, Internet das Coisas (IoT), análise e manipulação de informações geoespaciais, bibliotecas de mapas, gerenciamento de processos digitais e ETL.
 
-Bacharel em Sistemas de Informação - CEFET/RJ.
-Escritor amados.  
+Bacharel em Sistemas de Informação - CEFET/RJ.  
+Escritor amador.  
 Amante de JavaScript, cerveja e futebol.
 
 ![Conhecimento não é o que você sabe, mas o que você faz com o que sabe.](/media/vcpablo-about-me.png)
