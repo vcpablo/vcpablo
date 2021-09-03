@@ -1,5 +1,5 @@
 ---
-title: "About me"
+title: "Sobre mim"
 template: "page"
 socialImage: "/media/vcpablo-about-me.png"
 ---
