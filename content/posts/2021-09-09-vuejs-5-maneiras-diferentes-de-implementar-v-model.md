@@ -18,7 +18,7 @@ VueJS é um framework web utilizado para construir aplicações front end e é, 
 
 Ele possui a diretiva `v-model` que torna a implementação de two-way data binding em [elementos de entrada de dados](https://br.vuejs.org/v2/guide/forms.html#Uso-Basico) ["mamão com açúcar"](https://br.vuejs.org/v2/guide/#Tratando-Interacao-do-Usuario).
 
-Independente do que estiver construindo, você provavelmente vai precisar criar componentes customizados que recebem e manipulam dados através do mecanismo de _two-way data binding_. 
+Independentemente do que estiver construindo, você provavelmente vai precisar criar componentes customizados que recebem e manipulam dados através do mecanismo de _two-way data binding_. 
 
 Neste artigo eu vou te mostrar 5 formas diferentes de implementar o seu próprio `v-model` em seu componente:
 
@@ -30,7 +30,7 @@ Neste artigo eu vou te mostrar 5 formas diferentes de implementar o seu próprio
 
 _Obs.: O objetivo aqui não é comparar a performance nem discutir quais das implementações são melhores ou piores mas sim apresentar diferentes abordagens que podem ser utilizadas para atingir o resultado esperado de um `v-model` em componentes customizados._
 
-ℹ O componente chamada `BaseInput.vue` usado nos exemplos é bastante simples e você, provavelmente, irá ser questionar se implementar o mecanismo de two-way data binding nele é realmente necessário. Porém, como mencionei anteriormente, a intenção aqui é apenas demonstrar as possibilidades.
+ℹ O componente chamado `BaseInput.vue` usado nos exemplos é bastante simples e você, provavelmente, irá se questionar se implementar o mecanismo de two-way data binding nele é realmente necessário. Porém, como mencionei anteriormente, a intenção aqui é apenas demonstrar as possibilidades.
 
 <a name="local-variable-watcher"></a>
 ## 1. Watcher de variável local
@@ -74,7 +74,7 @@ Cada vez que o _watcher_ identifica uma mudança na variável local, ele emite u
 ## 2. Método Customizado
 
 Você já deve ter lido por aí que, para prevenir problemas de performance, você deve evitar utilizar muitos _watchers_ na sua aplicação.
-Neste segundo exemplo, tendo em mente esta premisa, nós tiramos proveito do evento `@input` disparado pelo elemento de entrada (`<input />`) nativo* e, utilizando um método customizado dentro do nosso componente, passamos o valor capturado deste elemento para o componente pai através da emissão de um evento `input`. O componente pai, por sua vez, ao utilizar o `v-model` poderá atualizar a prop `value` "de fora para dentro"**.
+Neste segundo exemplo, tendo em mente esta premissa, nós tiramos proveito do evento `@input` disparado pelo elemento de entrada (`<input />`) nativo* e, utilizando um método customizado dentro do nosso componente, passamos o valor capturado deste elemento para o componente pai através da emissão de um evento `input`. O componente pai, por sua vez, ao utilizar o `v-model` poderá atualizar a prop `value` "de fora para dentro"**.
 
 É importante mencionar que, neste caso, não utilizamos a diretiva `v-model` no input nativo, mas sim sua propriedade `value`.
 
@@ -152,7 +152,7 @@ _** Você deve evitar a alteração de valor de uma prop diretamente [Leia mais 
 ## 4. Prop e Evento Customizados (VueJS 2)
 
 Você deve ter percebido que, nos exemplos anteriores, o nome da prop é sempre `value` e o nome do evento é sempre `input`. Estes nomes são utilizados por padrão para implementar um `v-model` em um componente customizado. Porém, você pode trocá-los de acordo com suas necessidades.
-Para que isso seja possível e o mecanismo de two-way data binding continue funcionando você pode utilizar o atributo `model` da instância do Vue para informar ao componente o nome da prop e do evento devem representar "participar" do mecanismo.
+Para que isso seja possível e o mecanismo de two-way data binding continue funcionando você pode utilizar o atributo `model` da instância do Vue para informar ao componente o nome da prop e do evento que devem representar "participar" do mecanismo.
 
 ```javascript
 <!-- BaseInput.vue -->
@@ -263,10 +263,11 @@ No exemplo abaixo, estamos dizendo que a propriedade `text`, dentro do component
 
 ---
 
-Deixe seu comentário me dizendo se conhece alguma outra implementação que envolva `v-model` que seja interessante mencionar aqui ou envie-me sugestões de outros assuntos que podem se tornar um artigo como este aqui.
+Deixe seu comentário me dizendo se conhece alguma outra implementação envolvendo `v-model` que seja interessante mencionar aqui ou envie-me sugestões de outros assuntos que podem se tornar um artigo como este.
 
 **Você pode encontrar exemplos de todas as abordagens aqui citadas (em inglês) [neste repositório](https://github.com/vcpablo/vuejs-v-model).**
 
 Muito Obrigado a [Keith Machado](https://dev.to/keithmchd48) pela colaboração! ([Ver artigo original (inglês)](https://dev.to/vcpablo/vuejs-2-different-ways-to-implement-v-model-1mjf))
 
 Espero que seja útil e, por favor, compartilhe!
+
