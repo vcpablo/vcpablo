@@ -14,7 +14,7 @@ tags:
   - frontend
   - iniciante
 ---
-VueJS é um framework web utilizado para construir aplicações front end e é, no momento, [amplamente utilizado] (https://insights.stackoverflow.com/survey/2020#technology-web-frameworks) por desenvolvedores ao redor do mundo.
+VueJS é um framework web utilizado para construir aplicações front end e é, no momento, [amplamente utilizado](https://insights.stackoverflow.com/survey/2020#technology-web-frameworks) por desenvolvedores ao redor do mundo.
 
 Ele possui a diretiva `v-model` que torna a implementação de two-way data binding em [elementos de entrada de dados](https://br.vuejs.org/v2/guide/forms.html#Uso-Basico) ["mamão com açúcar"](https://br.vuejs.org/v2/guide/#Tratando-Interacao-do-Usuario).
 
@@ -40,7 +40,7 @@ Aqui, basta criar uma `prop` chamada `value` com o tipo desejado, criar uma vari
 
 Cada vez que o _watcher_ identifica uma mudança na variável local, ele emite um evento `input` passando o novo valor da mesma. Este valor poderá, então, ser lido pelo componente pai que, por sua vez, irá atualizar a prop `value` "de fora para dentro".
 
-```vuejs
+```javascript
 <!-- BaseInput.vue -->
 <template>
   <input type="text" v-model="model" />
@@ -80,7 +80,7 @@ Neste segundo exemplo, tendo em mente esta premisa, nós tiramos proveito do eve
 
 _* O VueJS já cria, automaticamente, event listeners em elementos de entrada de dados e, quando esses elementos são destruídos, os listeners são destruídos também._
 
-```vuejs
+```javascript
 <!-- BaseInput.vue -->
 <template>
   <input type="text" :value="value" @input="onInput" />
@@ -113,7 +113,7 @@ _* O VueJS já cria, automaticamente, event listeners em elementos de entrada de
 Uma outra forma de implementar seu próprio `v-model` é utilizando os [_getters_ e _setters_](https://br.vuejs.org/v2/guide/computed.html#Atribuicao-em-Dados-Computados) de computed properties.
 Primeiro defina uma _computed property_ local, dentro do seu componente. Depois, implemente um _getter_ que retorna o valor da prop `value` e um _setter_ que emite o evento `input` para que o componente pai atualize a prop `value` "de fora para dentro"**.
 
-```vuejs
+```javascript
 <!-- BaseInput.vue -->
 <template>
   <input type="text" v-model="model" />
@@ -154,7 +154,7 @@ _** Você deve evitar a alteração de valor de uma prop diretamente [Leia mais 
 Você deve ter percebido que, nos exemplos anteriores, o nome da prop é sempre `value` e o nome do evento é sempre `input`. Estes nomes são utilizados por padrão para implementar um `v-model` em um componente customizado. Porém, você pode trocá-los de acordo com suas necessidades.
 Para que isso seja possível e o mecanismo de two-way data binding continue funcionando você pode utilizar o atributo `model` da instância do Vue para informar ao componente o nome da prop e do evento devem representar "participar" do mecanismo.
 
-```vuejs
+```javascript
 <!-- BaseInput.vue -->
 <template>
   <input type="text" :value="text"  @input="onInput" />
@@ -231,7 +231,7 @@ A versão 3 do VueJS, lançada em 18 de setembro de 2020, tornou possível defin
 Para fazer isso, basta utilizar um modificador no próprio `v-model` quando utilizar o seu componente customizado.
 No exemplo abaixo, estamos dizendo que a propriedade `text`, dentro do componente `BaseInput`, irá receber o valor vindo do `v-model`.
 
-```vuejs
+```javascript
 <!-- BaseInput.vue -->
 <template>
   <input type="text" :value="text"  @input="onInput" />
