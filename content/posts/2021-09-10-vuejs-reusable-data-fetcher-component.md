@@ -3,7 +3,7 @@ template: post
 title: VueJS - Reusable Data Fetcher Component
 slug: vuejs-reusable-data-fetcher-component
 socialImage: /media/9x2u1dd7fjpbgzwb4238.jfif
-draft: true
+draft: false
 date: 2021-09-10T16:35:17.116Z
 description: In this article I explain to you how to build a reusable Data
   Fetcher Component to use in your VueJS applications.
